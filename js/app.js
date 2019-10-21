@@ -77,35 +77,6 @@ function calculateGp() {
                 percentage.value = totalScore.toFixed(2);
             }
 
-            //Get the grade equivalent of course score
-            // for (let i = 0; i < scores.length; i++) {
-            //     if (scoresToNum >= 70) {
-            //         gradeTitle[i].style.display = 'block';
-            //         gradeContent[i].style.display = 'block';
-            //         gradeContent[i].appendChild(document.createTextNode('A'));
-            //     } else if (scoresToNum >= 60) {
-            //         gradeTitle[i].style.display = 'block';
-            //         gradeContent[i].style.display = 'block';
-            //         gradeContent[i].appendChild(document.createTextNode('B'));
-            //     } else if (scoresToNum >= 50) {
-            //         gradeTitle[i].style.display = 'block';
-            //         gradeContent[i].style.display = 'block';
-            //         gradeContent[i].appendChild(document.createTextNode('C'));
-            //     } else if (scoresToNum >= 46) {
-            //         gradeTitle[i].style.display = 'block';
-            //         gradeContent[i].style.display = 'block';
-            //         gradeContent[i].appendChild(document.createTextNode('D'));
-            //     } else if (scoresToNum >= 40) {
-            //         gradeTitle[i].style.display = 'block';
-            //         gradeContent[i].style.display = 'block';
-            //         gradeContent[i].appendChild(document.createTextNode('E'));
-            //     } else {
-            //         gradeTitle[i].style.display = 'block';
-            //         gradeContent[i].style.display = 'block';
-            //         gradeContent[i].appendChild(document.createTextNode('F'));
-            //     }
-            // }
-
         }
         document.querySelector('#loading').style.display = 'none';
     }
@@ -117,7 +88,7 @@ function calculateGp() {
             return 4 * unit;
         } else if (score >= 50) {
             return 3 * unit;
-        } else if (score >= 46) {
+        } else if (score >= 45) {
             return 2 * unit;
         } else if (score >= 40) {
             return 1 * unit;
